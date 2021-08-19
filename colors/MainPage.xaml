@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:colors"
+             x:Class="colors.MainPage"
+             NavigationPage.HasNavigationBar="false">
+    <AbsoluteLayout>
+        <Grid x:Name="grdMain" Margin="5" BackgroundColor="White"
+              HorizontalOptions="Center" VerticalOptions="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.4*"/>
+                <RowDefinition Height="0.1*"/>
+                <RowDefinition Height="0.1*"/>
+                <RowDefinition Height="0.1*"/>
+                <RowDefinition Height="0.1*"/>
+                <RowDefinition Height="0.1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.2*"/>
+                <ColumnDefinition Width="0.6*"/>
+                <ColumnDefinition Width="0.2*"/>
+            </Grid.ColumnDefinitions>
+
+            <Image Source="main.png" Grid.Row="0" Grid.Column="0" Grid.RowSpan="6" Grid.ColumnSpan="3" Aspect="AspectFit"/>
+            <Image x:Name="lblTitle"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Source="title.png" Aspect="AspectFit"/>
+            <ImageButton x:Name="btnEasy" Source="easy.png"  BackgroundColor="LightPink" Grid.Row="1" Grid.Column="1" Clicked="btnEasy_Clicked"/>
+            <ImageButton x:Name="btnNormal" Source="normal.png" BackgroundColor="LightPink" Grid.Row="2" Grid.Column="1" Clicked="btnNormal_Clicked"/>
+            <ImageButton x:Name="btnHard" Source="hard.png" BackgroundColor="LightPink" Grid.Row="3" Grid.Column="1" Clicked="btnHard_Clicked"/>
+            <ImageButton x:Name="btnFree" Source="free.png" BackgroundColor="LightBlue" Grid.Row="4" Grid.Column="1" Clicked="btnFree_Clicked"/>
+            <controls:AdMobBanner Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3"  WidthRequest="320" HeightRequest="50" />
+        </Grid>
+    </AbsoluteLayout>
+</ContentPage>

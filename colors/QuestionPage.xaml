@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:colors"
+             x:Class="colors.QuestionPage"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <Grid x:Name="grdMain" Margin="10"  BackgroundColor="White"
+                  HorizontalOptions="Center" VerticalOptions="Center"
+                  WidthRequest="400" HeightRequest="700"
+                  >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="0.5*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="0.5*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="0"/>
+                    </Grid.ColumnDefinitions>
+
+                <Image x:Name="imgQBack1" Source="haikei.png" Aspect="AspectFill" Grid.Row="0" Grid.RowSpan="4" Grid.Column="1" Grid.ColumnSpan="5"/>
+                <Image x:Name="imgQTitle" Source="mihon.png" Aspect="AspectFill" Grid.Row="0" Grid.RowSpan="1" Grid.Column="1" Grid.ColumnSpan="5"/>
+                <Image x:Name="imgQDetail" Source="lblquiz.png" Aspect="AspectFit" Grid.Row="3" Grid.RowSpan="1" Grid.Column="1" Grid.ColumnSpan="5"/>
+                <Image x:Name="imgQBack2" Source="haikei.png" Aspect="AspectFill" Grid.Row="0" Grid.RowSpan="4" Grid.Column="6" Grid.ColumnSpan="5"/>
+
+                <Frame x:Name="frmExample" Grid.Row="0" Grid.RowSpan="4" Grid.Column="1" Grid.ColumnSpan="5" BackgroundColor="Aqua" CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Frame x:Name="frmDraw" Grid.Row="0" Grid.RowSpan="4" Grid.Column="6" Grid.ColumnSpan="5" CornerRadius="100" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <!--<ImageButton x:Name="imgExample" CornerRadius="1000" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="5"/>-->
+                <!--<ImageButton x:Name="imgDraw" CornerRadius="500" Grid.Row="0" Grid.Column="6" Grid.ColumnSpan="5"/>-->
+
+                <ImageButton x:Name="imgColors1" BorderColor="Gray" BorderWidth="1" CornerRadius="100" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Clicked="imgColors_Clicked"/>
+                <ImageButton x:Name="imgColors2" CornerRadius="100" Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="2" Clicked="imgColors_Clicked"/>
+                <ImageButton x:Name="imgColors3" CornerRadius="100" Grid.Row="4" Grid.Column="5" Grid.ColumnSpan="2" Clicked="imgColors_Clicked"/>
+                <ImageButton x:Name="imgColors4" CornerRadius="100" Grid.Row="4" Grid.Column="7" Grid.ColumnSpan="2" Clicked="imgColors_Clicked"/>
+                <ImageButton x:Name="imgColors5" CornerRadius="100" Grid.Row="4" Grid.Column="9" Grid.ColumnSpan="2" Clicked="imgColors_Clicked"/>
+
+                <Image x:Name="imgCName1" Source="white.png" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgCName2" Source="red.png" Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgCName3" Source="yellow.png" Grid.Row="5" Grid.Column="5" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgCName4" Source="blue.png" Grid.Row="5" Grid.Column="7" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgCName5" Source="black.png" Grid.Row="5" Grid.Column="9" Grid.ColumnSpan="2"/>
+
+                <ImageButton x:Name="imgColors6" CornerRadius="100" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" Clicked="imgColors_Clicked"/>
+                <ImageButton x:Name="imgColors7" CornerRadius="100" Grid.Row="6" Grid.Column="3" Grid.ColumnSpan="2" Clicked="imgColors_Clicked"/>
+                <ImageButton x:Name="imgColors8" CornerRadius="100" Grid.Row="6" Grid.Column="5" Grid.ColumnSpan="2" Clicked="imgColors_Clicked"/>
+                <ImageButton x:Name="imgColors9" CornerRadius="100" Grid.Row="6" Grid.Column="7" Grid.ColumnSpan="2" Clicked="imgColors_Clicked"/>
+                <ImageButton x:Name="imgColors10" CornerRadius="100" Grid.Row="6" Grid.Column="9" Grid.ColumnSpan="2" Clicked="imgColors_Clicked"/>
+
+                <Image x:Name="imgCName6" Source="green.png" Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgCName7" Source="orange.png" Grid.Row="7" Grid.Column="3" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgCName8" Source="purple.png" Grid.Row="7" Grid.Column="5" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgCName9" Source="pink.png" Grid.Row="7" Grid.Column="7" Grid.ColumnSpan="2"/>
+                <Image x:Name="imgCName10" Source="gray.png" Grid.Row="7" Grid.Column="9" Grid.ColumnSpan="2"/>
+
+                <ImageButton x:Name="imgClear" Source="prev.png" Grid.Row="8" Grid.Column="4" Grid.ColumnSpan="2" Clicked="imgClear_Clicked"/>
+                <ImageButton x:Name="imgBack" Source="back.png" Grid.Row="8" Grid.Column="6" Grid.ColumnSpan="2" Clicked="imgBack_Clicked"/>
+
+                <controls:AdMobBanner Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="10"  WidthRequest="320" HeightRequest="50" />
+
+            </Grid>
+            <Image x:Name="imgResult" Source="batu.png" WidthRequest="400" HeightRequest="700" IsVisible="false"/>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
